@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/entracriar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/monteseupedido.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <div class="navbar-img-left">
+                <img src="img/Logo sorvete.png" alt="logo-Sorvete" id="logo">
+                <ul class="navbar-left">
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="monteseupedido.html" id="monte-pedido">Monte Seu Pedido</a></li>
+                    <li><a href="entrarcriarconta.html" id="entrar-conta">Entrar/Criar Conta</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="left-bar"> <!-- Lista de acesso da esquerda -->
+        <ul>
+            <li><a id="entrar" href="entrarcriarconta.html">Entrar</a></li>
+            <li><a id="criar" href="criarconta.html">Criar Conta</a></li>
+        </ul>
+    </div>
+    <main class="main-container">
+        <form action="" class="login">
+            <input type="text" placeholder="Usuário" name="usuario" id="usuario">
+            <input type="password" placeholder="Senha" name="senha" id="senha">
+            <div class="checkbox">
+                <!--<input type="checkbox" name="lembrar" id="lembrar">
+                <label for="lembrar">Lembrar minha senha</label>  -->
+            </div>
+            <button type="submit" id="entrar-submit" onclick="logar()">Entrar</button>
+        </form>
+    </main>
+
+
+    
+    <script src="entrar.js"></script>
+</body>
+
+</html>

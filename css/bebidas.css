@@ -1,0 +1,63 @@
+.amostragem-b a {
+    display: none;
+}
+
+.active a {
+    display: block;
+    background-color: #F282BA;
+    padding: 6px 16px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.galery, .amostragem-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+
+.amostragem-b {
+    max-width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.amostragem-b img {
+    width: 150px;
+}
+
+.left-bar #recipiente {
+    background-color: #B9E0F0;
+    color: #000;
+}
+
+#bebidasbttn {
+    background-color: #F282BA;
+    border-radius: 0px 25px 25px 0px;
+    color: #fff;
+}
+
+@media screen and (max-width: 710px) {
+    .galery, .amostragem-b {
+        margin-top: 150px;
+    }
+    #bebidasbttn {
+        background-color: #F282BA;
+        border-radius: 25px;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .galery, .amostragem-b {
+        margin-top: 200px;
+    }
+    #bebidasbttn {
+        background-color: #F282BA;
+        border-radius: 25px;
+        color: #fff;
+    }
+}

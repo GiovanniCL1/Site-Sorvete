@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/carrinho.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/monteseupedido.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <div class="navbar-img-left">
+                <img src="img/Logo sorvete.png" alt="logo-Sorvete" id="logo">
+                <ul class="navbar-left">
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="monteseupedido.html" id="monte-pedido">Monte Seu Pedido</a></li>
+                    <li><a href="entrarcriarconta.html" id="entrar-conta">Entrar/Criar Conta</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container principal-div">
+        <div class="sidebar">
+            <ul>
+                <li class="nav-item" onclick="showProducts('ice-cream')">Sabores</li>
+                <li class="nav-item" onclick="showProducts('drinks')">Bebidas</li>
+                <li class="nav-item" onclick="showProducts('popsicles')">Picolés</li>
+                <li class="nav-item" onclick="showProducts('complementos')">complementos</li>
+                <li class="nav-item" onclick="showProducts('recipientes')">Recipientes</li>
+            </ul>
+        </div>
+        <div class="products">
+            <div class="product-card ice-cream">
+                <img class="product-image" src="img/sabores/image 28.png" alt="Ice Cream">
+                <h3 class="product-name">Morango</h3>
+                <p class="product-price">R$4.99</p>
+                <a class="add-to-cart-btn">Adicionar</a>
+            </div>
+            <div class="product-card ice-cream">
+                <img class="product-image" src="img/sabores/image 29.png" alt="Ice Cream">
+                <h3 class="product-name">Baunilha</h3>
+                <p class="product-price">R$4.99</p>
+                <a class="add-to-cart-btn">Adicionar</a>
+            </div>
+            <div class="product-card ice-cream">
+                <img class="product-image" src="img/sabores/image 30.png" alt="Ice Cream">
+                <h3 class="product-name">Chocolate</h3>
+                <p class="product-price">R$4.99</p>
+                <a class="add-to-cart-btn">Adicionar</a>
+            </div>
+            <div class="product-card drinks">
+                <img class="product-image" src="img/bebidas/image 20.png" alt="Drink">
+                <h3 class="product-name">Coca-Cola</h3>
+                <p class="product-price">R$3.99</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card drinks">
+                <img class="product-image" src="img/bebidas/image 21.png" alt="Drink">
+                <h3 class="product-name">Fanta Laranja</h3>
+                <p class="product-price">R$4.99</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card drinks">
+                <img class="product-image" src="img/bebidas/image 22.png" alt="Drink">
+                <h3 class="product-name">Fanta Uva</h3>
+                <p class="product-price">R$4.99</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card drinks">
+                <img class="product-image" src="img/bebidas/image 23.png" alt="Drink">
+                <h3 class="product-name">Guaraná</h3>
+                <p class="product-price">R$4.99</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card drinks">
+                <img class="product-image" src="img/bebidas/image 24.png" alt="Drink">
+                <h3 class="product-name">Água Tônica</h3>
+                <p class="product-price">R$4.99</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card popsicles">
+                <img class="product-image" src="img/picoles/image 33.png" alt="Popsicle">
+                <h3 class="product-name">Morango</h3>
+                <p class="product-price">R$1.99</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card popsicles">
+                <img class="product-image" src="img/picoles/image 35.png" alt="Popsicle">
+                <h3 class="product-name">Chocolate</h3>
+                <p class="product-price">R$1.99</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card popsicles">
+                <img class="product-image" src="img/picoles/image 36.png" alt="Popsicle">
+                <h3 class="product-name">Uva</h3>
+                <p class="product-price">R$1.99</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card popsicles">
+                <img class="product-image" src="img/picoles/image 37.png" alt="Popsicle">
+                <h3 class="product-name">Tablitos</h3>
+                <p class="product-price">R$1.99</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card popsicles">
+                <img class="product-image" src="img/picoles/image 38.png" alt="Popsicle">
+                <h3 class="product-name">Limão</h3>
+                <p class="product-price">R$1.99</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card complementos">
+                <img class="product-image"
+                    src="img/complementos/bala_fini_gelatina_de_beijos_morango_15g_c609707b-9ddd-47b1-8332-6b283944dd9b-removebg-preview 1.png"
+                    alt="Popsicle">
+                <h3 class="product-name">Fini</h3>
+                <p class="product-price">R$2.30</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card complementos">
+                <div class="recipientes-f">
+                    <img class="product-image" src="img/complementos/image 31.png" alt="Popsicle" id="calda-chocolate">
+                    <h3 class="product-name">Cobertura</h3>
+                    <p class="product-price">R$2.30</p>
+                    <a class="add-to-cart-btn" href="#">Adicionar</a>
+                </div>
+            </div>
+            <div class="product-card complementos">
+                <img class="product-image" src="img/complementos/image 32.png" alt="Popsicle">
+                <h3 class="product-name">Canudo de Chocolate</h3>
+                <p class="product-price">R$2.30</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card complementos">
+                <img class="product-image"
+                    src="img/complementos/kisspng-jelly-bean-bead-plastic-fruit-johnvince-m-amp-m-amp-apos-s-fortinos-5b6c41f78fb027 1.png"
+                    alt="Popsicle">
+                <h3 class="product-name">M&Ms</h3>
+                <p class="product-price">R$2.30</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card complementos">
+                <img class="product-image"
+                    src="img/complementos/png-transparent-cream-chocolate-spread-nutella-white-chocolate-chocolate-food-sauces-superfood-removebg-preview 1.png"
+                    alt="Popsicle">
+                <h3 class="product-name">Nutela</h3>
+                <p class="product-price">R$2.30</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card recipientes">
+                <img class="product-image"
+                    src="img/recipientes/0179_taca-sorvete-tropical-300ml-nadir-0412_m1_637515750415090942-removebg-preview 1.png"
+                    alt="Popsicle">
+                <h3 class="product-name">Taça-Tropical</h3>
+                <p class="product-price">R$4.30</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card recipientes">
+                <img class="product-image" src="img/recipientes/image 25.png" alt="Popsicle">
+                <h3 class="product-name">Casquinha</h3>
+                <p class="product-price">R$4.30</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card recipientes">
+                <img class="product-image" src="img/recipientes/image 26.png" alt="Popsicle">
+                <h3 class="product-name">Vasilha</h3>
+                <p class="product-price">R$4.30</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card recipientes">
+                <img class="product-image" src="img/recipientes/image 27.png" alt="Popsicle">
+                <h3 class="product-name">Pote</h3>
+                <p class="product-price">R$4.30</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+            <div class="product-card recipientes">
+                <img class="product-image"
+                    src="img/recipientes/taca-para-sorvete-rock-bar-380ml-bormioli-removebg-preview 1.png"
+                    alt="Popsicle">
+                <h3 class="product-name">Taça</h3>
+                <p class="product-price">R$4.30</p>
+                <a class="add-to-cart-btn" href="#">Adicionar</a>
+            </div>
+        </div>
+        <div class="cart-container">
+            <h2>Carrinho</h2>
+            <ul id="cart-items">
+            </ul>
+            <button onclick="sendWhatsAppMessage()" id="finalizar">Finalizar</button>
+        </div>
+
+        <script>
+            // Add your JavaScript code here
+            function showProducts(category) {
+                const productCards = document.querySelectorAll('.product-card');
+                productCards.forEach(card => {
+                    if (card.classList.contains(category)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            let cartItems = [];
+
+            function showProducts(category) {
+                const productCards = document.querySelectorAll('.product-card');
+                productCards.forEach(card => {
+                    if (card.classList.contains(category)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            function addToCart(productName, price) {
+                cartItems.push({ name: productName, price: price });
+                updateCart();
+            }
+
+            function updateCart() {
+                const cartList = document.getElementById('cart-items');
+                cartList.innerHTML = '';
+
+                cartItems.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${item.name} - $${item.price}`;
+                    cartList.appendChild(listItem);
+                });
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+                addToCartButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const productCard = button.parentNode;
+                        const productName = productCard.querySelector('.product-name').textContent;
+                        const productPrice = productCard.querySelector('.product-price').textContent;
+
+                        addToCart(productName, productPrice);
+                    });
+                });
+            });
+
+            function sendWhatsAppMessage() {
+                const message = generateWhatsAppMessage();
+                const whatsappLink = window.open(`https://api.whatsapp.com/send?phone=34999426661&text=${message}`);
+                window.open(whatsappLink);
+            }
+
+            function generateWhatsAppMessage() {
+                let message = 'Olá! Gostaria dos seguintes itens:\n\n';
+
+                cartItems.forEach(item => {
+                    message += `- ${item.name} - $${item.price}\n`;
+                });
+
+                message += '\nTotal: $' + calculateTotalPrice();
+
+                return message;
+            }
+
+            function calculateTotalPrice() {
+                let totalPrice = 0;
+                cartItems.forEach(item => {
+                    totalPrice += parseFloat(item.price.replace('$', ''));
+                });
+                return totalPrice.toFixed(2);
+            }
+        </script>
+        <script src="index.js"></script>
+</body>
+
+</html>

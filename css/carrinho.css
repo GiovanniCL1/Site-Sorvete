@@ -1,0 +1,141 @@
+#carrinho-img {
+    background-color: #feac00;
+}
+
+.carrinho-div {
+    position: relative;
+}
+
+.carrinho-div span {
+    position: absolute;
+    background-color: #f282ba;
+    padding: 2px 12px;
+    border-radius: 500px;
+    top: -25%;
+    right: -30%;
+}
+
+
+.principal-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    margin-top: 300px;
+}
+
+.sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sidebar li {
+    padding: 16px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.sidebar li:hover {
+    cursor: pointer;
+    background-color: #F282BA;
+    color: #fff;
+    border-radius: 500px;
+    transform: scale(1.2);
+}
+
+.products {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 150px;
+}
+
+.product-card {
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #FEAC00;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.product-name {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.product-price {
+    text-align: center;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.add-to-cart-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #F282BA;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#calda-chocolate {
+    width: 50px;
+}
+
+.recipientes-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cart-container {
+    padding: 20px;
+    background-color: #FEAC00;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.cart-container h2 {
+    text-align: center;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 5px;
+}
+
+
+#finalizar {
+    all: unset;
+    text-align: center;
+    background-color: #f282ba;
+    padding: 12px 16px;
+    border-radius: 500px;
+}
